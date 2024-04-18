@@ -1,0 +1,251 @@
+2024-04-18 09:55:03.168 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-04-18 09:55:03.216 [restartedMain] INFO  com.project.app.DaAppApplication - Starting DaAppApplication using Java 21.0.2 with PID 15152 (C:\Users\leluan\OneDrive\Máy tính\Base_code\Base-public-be\da_app\target\classes started by leluan in C:\Users\leluan\OneDrive\Máy tính\Base_code\Base-public-be)
+2024-04-18 09:55:03.217 [restartedMain] INFO  com.project.app.DaAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-18 09:55:03.263 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-18 09:55:03.263 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-18 09:55:05.331 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18 09:55:05.583 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 241 ms. Found 18 JPA repository interfaces.
+2024-04-18 09:55:06.585 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8091 (http)
+2024-04-18 09:55:06.595 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2024-04-18 09:55:06.597 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-18 09:55:06.597 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18 09:55:06.664 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-18 09:55:06.665 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3400 ms
+2024-04-18 09:55:07.003 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18 09:55:07.107 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 09:55:07.172 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-18 09:55:07.540 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-18 09:55:07.593 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18 09:55:08.320 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12291c01
+2024-04-18 09:55:08.321 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-18 09:55:08.466 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-18 09:55:10.028 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 09:55:16.064 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 09:55:16.548 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18 09:55:16.656 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-18 09:55:17.286 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.AttachmentController.uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2024-04-18 09:55:17.288 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.AttachmentController; public org.springframework.http.ResponseEntity com.project.app.api.rest.AttachmentController.uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.Integer)]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.799 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.OrganizationController.filter(com.project.app.api.utils.filter.FilterBase)
+2024-04-18 09:55:17.799 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.OrganizationController; public org.springframework.http.ResponseEntity com.project.app.api.rest.OrganizationController.filter(com.project.app.api.utils.filter.FilterBase)]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.942 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.checkInfo(com.project.app.api.utils.filter.InputReviewPosts)
+2024-04-18 09:55:17.942 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.checkInfo(com.project.app.api.utils.filter.InputReviewPosts)]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.944 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateSpam(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.944 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateSpam(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.944 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateTag(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.944 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateTag(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateInfo(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateInfo(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.acceptPost(com.project.app.api.utils.filter.InputReviewPosts)
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.acceptPost(com.project.app.api.utils.filter.InputReviewPosts)]] with attributes [[authorize: 'hasAnyAuthority('ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateSentiment(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateSentiment(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateAllSate(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateAllSate(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasAnyAuthority(\'ADMIN\', \'USER\')") found on specific method: public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateCompleted(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException
+2024-04-18 09:55:17.945 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.app.api.rest.PostController; public org.springframework.http.ResponseEntity com.project.app.api.rest.PostController.updateCompleted(com.project.app.api.utils.filter.InputReviewPosts) throws com.fasterxml.jackson.core.JsonProcessingException]] with attributes [[authorize: 'hasAnyAuthority('ADMIN', 'USER')', filter: 'null', filterTarget: 'null']]
+2024-04-18 09:55:18.467 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 09:55:18.576 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e62102d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f54eed0, org.springframework.security.web.context.SecurityContextHolderFilter@7df775aa, org.springframework.security.web.header.HeaderWriterFilter@15fd4fb, org.springframework.web.filter.CorsFilter@aaf9f6b, org.springframework.security.web.authentication.logout.LogoutFilter@57983be0, com.project.app.securitys.filterSecurity.JwtTokenFilter@351e1414, com.project.app.securitys.filterSecurity.JwtTokenFilter@351e1414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71ce6c70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@466d2fe4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77a8cbc8, org.springframework.security.web.access.ExceptionTranslationFilter@79dd3f54, org.springframework.security.web.access.intercept.AuthorizationFilter@40060a06]
+2024-04-18 09:55:18.597 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2024-04-18 09:55:19.880 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-18 09:55:19.918 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2024-04-18 09:55:19.944 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8091 (http) with context path ''
+2024-04-18 09:55:19.958 [restartedMain] INFO  com.project.app.DaAppApplication - Started DaAppApplication in 17.152 seconds (process running for 18.908)
+2024-04-18 09:55:20.184 [scheduling-1] INFO  c.p.a.a.c.scheduled.ExportScheduled - Data new: 
+2024-04-18 09:58:30.042 [http-nio-8091-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 09:58:30.047 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-18 09:58:30.076 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2024-04-18 09:58:30.271 [http-nio-8091-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/author/login':
+
+org.apache.catalina.connector.RequestFacade@75a27045
+
+servletPath:/api/v1/author/login
+pathInfo:null
+headers: 
+host: localhost:8091
+connection: keep-alive
+content-length: 44
+sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+accept: application/json, text/plain, */*
+content-type: application/json
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9,vi;q=0.8
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-04-18 09:58:31.296 [http-nio-8091-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/author/getAuthor':
+
+org.apache.catalina.connector.RequestFacade@682c0bce
+
+servletPath:/api/v1/author/getAuthor
+pathInfo:null
+headers: 
+host: localhost:8091
+connection: keep-alive
+sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+accept: application/json, text/plain, */*
+content-type: application/json
+sec-ch-ua-mobile: ?0
+authorization: eyJhbGciOiJIUzI1NiJ9.eyJhZGRyZXNzIjoiMTIzQCIsInBob25lIjoiMTIzIiwiZnVsbE5hbWUiOiJIxrDGoW5nIFRyw6AiLCJ1c2VyTmFtZSI6IkFkbWluSHVvbmciLCJ1c2VySWQiOjksImVtYWlsIjoic2RzZEBnbWFpbC5jb20iLCJzdWIiOiJBZG1pbkh1b25nIiwiZXhwIjoxNzEzNDEwMTExfQ.uMBC1Ibfp849T_mC7U4xY6LUjYH4vKkKdlIRPAq62Bg
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9,vi;q=0.8
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-04-18 10:00:20.393 [scheduling-1] INFO  c.p.a.a.c.scheduled.ExportScheduled - Data new: 
+2024-04-18 10:03:39.969 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 10:03:40.008 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-18 10:03:40.038 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-04-18 10:04:40.490 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-04-18 10:04:40.541 [restartedMain] INFO  com.project.app.DaAppApplication - Starting DaAppApplication using Java 21.0.2 with PID 14792 (C:\Users\leluan\OneDrive\Máy tính\Base_code\Base-public-be\da_app\target\classes started by leluan in C:\Users\leluan\OneDrive\Máy tính\Base_code\Base-public-be)
+2024-04-18 10:04:40.541 [restartedMain] INFO  com.project.app.DaAppApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-18 10:04:40.590 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-18 10:04:40.590 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-18 10:04:41.971 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18 10:04:42.147 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 3 JPA repository interfaces.
+2024-04-18 10:04:43.022 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8091 (http)
+2024-04-18 10:04:43.032 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2024-04-18 10:04:43.033 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-18 10:04:43.034 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18 10:04:43.094 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-18 10:04:43.095 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2504 ms
+2024-04-18 10:04:43.324 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18 10:04:43.394 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 10:04:43.430 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-18 10:04:43.690 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-18 10:04:43.722 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18 10:04:44.513 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c28e0ca
+2024-04-18 10:04:44.514 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-18 10:04:44.682 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-18 10:04:46.028 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 10:04:47.943 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 10:04:48.513 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18 10:04:48.666 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-18 10:04:49.671 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 10:04:49.785 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@73077e2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3efdb51f, org.springframework.security.web.context.SecurityContextHolderFilter@4d8f1e7d, org.springframework.security.web.header.HeaderWriterFilter@146dff98, org.springframework.web.filter.CorsFilter@5982b94, org.springframework.security.web.authentication.logout.LogoutFilter@54ea6c9e, com.project.app.securitys.filterSecurity.JwtTokenFilter@31f01aaf, com.project.app.securitys.filterSecurity.JwtTokenFilter@31f01aaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@691d1297, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16d7c6e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7211d7ec, org.springframework.security.web.access.ExceptionTranslationFilter@4102ae2c, org.springframework.security.web.access.intercept.AuthorizationFilter@47d4233b]
+2024-04-18 10:04:49.803 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2024-04-18 10:04:50.579 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-04-18 10:04:50.618 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2024-04-18 10:04:50.634 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8091 (http) with context path ''
+2024-04-18 10:04:50.646 [restartedMain] INFO  com.project.app.DaAppApplication - Started DaAppApplication in 10.535 seconds (process running for 12.106)
+2024-04-18 10:05:25.701 [http-nio-8091-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 10:05:25.701 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-18 10:05:25.703 [http-nio-8091-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-18 10:05:25.725 [http-nio-8091-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/author/login':
+
+org.apache.catalina.connector.RequestFacade@488197d9
+
+servletPath:/api/v1/author/login
+pathInfo:null
+headers: 
+host: localhost:8091
+connection: keep-alive
+content-length: 44
+sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+accept: application/json, text/plain, */*
+content-type: application/json
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9,vi;q=0.8
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
+2024-04-18 10:05:26.460 [http-nio-8091-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/author/getAuthor':
+
+org.apache.catalina.connector.RequestFacade@6c85fba6
+
+servletPath:/api/v1/author/getAuthor
+pathInfo:null
+headers: 
+host: localhost:8091
+connection: keep-alive
+sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+accept: application/json, text/plain, */*
+content-type: application/json
+sec-ch-ua-mobile: ?0
+authorization: eyJhbGciOiJIUzI1NiJ9.eyJhZGRyZXNzIjoiMTIzQCIsInBob25lIjoiMTIzIiwiZnVsbE5hbWUiOiJIxrDGoW5nIFRyw6AiLCJ1c2VyTmFtZSI6IkFkbWluSHVvbmciLCJ1c2VySWQiOjksImVtYWlsIjoic2RzZEBnbWFpbC5jb20iLCJzdWIiOiJBZG1pbkh1b25nIiwiZXhwIjoxNzEzNDEwNTI2fQ.-exj5uAgIK3GQXr9uf2qxKunDnGhjLgylXTQx7egkbw
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9,vi;q=0.8
+
+
+Security filter chain: no match
+
+
+************************************************************
+
+
